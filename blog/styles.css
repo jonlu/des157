@@ -1,0 +1,174 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/****************** End CSS RESET *****************/
+
+body {
+	font-family: Helvetica, sans-serif;
+	color: #444;
+	font-weight: 200;
+	line-height: 1.4;
+}
+
+.container {
+	width: 880px;
+	margin: auto;
+}
+
+header {
+	height: 360px;
+	padding-bottom: 30px;
+
+}
+
+/*
+header h1 {
+	font-size: 50px;
+	line-height: 300px;
+	text-align: center;
+	letter-spacing: 15px;
+	font-weight: 700;
+	color: #FFF;
+	font-family: "Courier New";
+	text-shadow: -1px 0 #555, 0 1px #555, 1px 0 #555, 0 -1px #555, 4px 4px 4px #000;
+
+
+}*/
+
+header h1 {
+	margin: auto;
+	font-size: 40px;
+	padding-top:150px;
+	text-align: center;
+	letter-spacing: 15px;
+	font-weight: 400;
+	color: #232;
+	font-family: "Courier";
+}
+
+section {
+	margin: auto;
+	padding-bottom: 100px;
+}
+
+section h2 {
+	font-weight: 500;
+	font-size: 150%;
+	margin-bottom: 16px;
+	margin-right: 100px;
+}
+
+section p {
+
+
+}
+
+
+time {
+	display: block;
+	font-size: 85%;
+	margin-bottom: 16px;
+}
+
+nav {
+	display: inline-block;
+	text-align: center;
+
+	width: 100%;
+}
+
+nav li {
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 12px;
+	padding: 0 20px;
+
+}
+
+#prefooter {
+	clear: both;
+}
+footer {
+	clear: both;
+
+	padding: 50px 0;
+	text-align: center;
+}
+
+footer a {
+	font-size: 80%;
+}
+
+article {
+	padding-bottom: 60px;
+
+}
+
+a {
+	text-decoration: none;
+	color: #2A5DB0;
+	font-size: 110%;
+}
+a:hover {
+	color: #3A9FB0;
+}
+
+.resources {
+	font-style: italic;
+	font-size: 12px;
+}
+
+.column {
+	column-count: 3;
+	line-height: 1.5;
+	padding-bottom: 25px;
+}
+.post {
+	padding-top: 60px;
+}
+
+#post01 img {
+	width: 32.5%;
+	vertical-align: text-top;
+}
