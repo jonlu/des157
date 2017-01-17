@@ -51,10 +51,11 @@ table {
 	box-sizing: border-box;
 }
 /*********** BEGIN CSS ************/
-header img {
-  width: 100vw;
-  z-index: -1;
-  position: fixed;
+header {
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .head {
@@ -63,12 +64,12 @@ header img {
   color: black;
   text-align: center;
   font-size: 10vw;
-  padding-bottom: 15vw;
+	padding-bottom: 5vw;
   letter-spacing: .3vw;
 }
 .container {
   background-color: white;
-  padding: 6vw 12vw;
+  padding: 3vw 12vw;
 }
 
 section {
