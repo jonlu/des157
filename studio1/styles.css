@@ -56,16 +56,17 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	padding-top: 12vh;
+	padding-bottom: 12vh;
 }
 
 .head {
-  padding-top:5vw;
-  font-family: 'Unica One', cursive;
+
+  font-family: 'Open Sans Condensed', cursive;
   color: black;
   text-align: center;
   font-size: 10vw;
-	padding-bottom: 5vw;
-  letter-spacing: .3vw;
+  letter-spacing: 1vw;
 }
 .container {
   background-color: white;
@@ -93,11 +94,16 @@ h3 {
 }
 
 li {
-	display: block;
+
 	padding: 10px;
 	font-size: 20px;
 	font-weight: bold;
 	font-family: 'Open Sans Condensed', sans-serif;
+}
+ol {
+	list-style: decimal;
+
+	list-style-position: inside ;
 }
 a {
 	text-decoration: none;
