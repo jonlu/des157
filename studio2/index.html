@@ -1,12 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Studio 2</title>
-  </head>
-  <body>
-    <form name="f">
-      <input type="text" name="helloworld" placeholder="Hellow World">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Studio 2 | Ugly Sweater</title>
+  <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
+  <link href="style.css" rel="stylesheet"/>
+  <script src='script.js' type="text/javascript"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Mystery Libs</h1>
+  </header>
+  <div id="inputs">
+
+    <form name="lib">
+      <div>
+        <input type="text" name="firstName" placeholder="Name">
+        <input type="text" name="possession" placeholder="Favorite Possession">
+      </div>
+      <div>
+        <input type="text" name="adj1" placeholder="Adjective">
+        <input type="text" name="adj2" placeholder="Adjective">
+      </div>
+      <div>
+        <input type="text" name="noun" placeholder="Mysterious Thing">
+        <input type="text" name="bodyPart" placeholder="Body Part">
+      </div>
+      <div class="submission">
+        <input type="submit" value="submit">
+      </div>
     </form>
+
+  </div>
+  <div id="hider" class="madlig-vis madlib-hid">
+    <p id="response"></p>
+    <img id="bill" class="img-vis img-hid" src="bill.gif" alt="bill gif">
+  </div>
+  <footer>
+    <a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+
+  </footer>
   </body>
+
 </html>

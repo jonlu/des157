@@ -1,62 +1,75 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Jonathan Lu</title>
-		<link href="styles.css" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-	</head>
+<head>
+	<meta charset="UTF-8">
+	<title>Jonathan Lu</title>
+	<link href="styles.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+</head>
 
-	<body>
-		<div class="container">
-			<header>
-				<h1>JONATHAN LU</h1>
+<body>
+	<div class="container">
+		<header>
+			<h1>JONATHAN LU</h1>
 
 			<nav>
 				<ul>
 					<li><a href="#post01">Post 1</a></li>
-					<li><a href="#">Post 2</a></li>
+					<li><a href="#post02">Post 2</a></li>
 					<li><a href="#">Post 3</a></li>
 					<li><a href="#">Post 4</a></li>
 				</ul>
 			</nav>
-			</header>
+		</header>
 
-				<article class="post" id="post01">
-					<h2>Interface Design on the Web</h2>
-					<time datetime="2017-01-12T13:53">January 12th, 2017</time>
+		<article class="post" id="post02">
+			<h2>Form Design on the Web</h2>
+			<time datetime="2017-01-30T13:53">January 30th, 2017</time>
+			<div class="column">
+				<p>One of my most often used forms is a checkout form for online shopping. When checking out for the first time at a small online retailer, we can see that most of these forms are powered by a company Shopify. </p>
 
-					<div class="column">
-						<p>Let’s take a look at Spotify.com. Making use of a variety of album covers as images, Spotify showcases popular titles at any viewport width. Let’s begin with the design as viewed on mobile: each section of the page is accompanied by an image that accentuates the text, and is distinguished by different background colors or images. Very little padding can be seen on the sides due to the restricted screen size.
-</p>
+				<p>The design used in the checkout process is streamlined and simple: it asks for the initial shipping and contact information, and displays everything that was in the shopping cart on a sidebar to the right. The steps toward finishing the checkout process are clearly labeled, and there are no extra optional forms. This allows for the process to be entirely uniform, and gives the user confidence when ordering.</p>
 
+				<p>For the most part, these forms are saved for future purchases and only require confirmation upon shopping. The process for saving information is also easy with a checkbox that allows the the company to store your information. Though navigating the forms is easy, sometimes it&#8217;s best to skip straight to checkout</p>
+			</div>
+			<img src="images/shopify.png" alt="Forms screenshot" width="100%">
+		</article>
 
-						<p>As the screen is expanded to a typical vertical iPad viewing width, we can still see the hamburger menu icon for navigation, but there becomes a more defined grid in the body sections and increased padding. Spotify can also take a few more creative liberties with how images are displayed: instead of being confined to the same column, the images of each section are instead placed to the side of the text and resized to take up more screen space. Additionally, Spotify shows some animations and fade effects when displaying each section.</p>
+		<article class="post" id="post01">
+			<h2>Interface Design on the Web</h2>
+			<time datetime="2017-01-12T13:53">January 12th, 2017</time>
 
-						<p>Finally, as the screen is resized for desktop, we can see a full range of animations and images. The grid expands slightly, however the most drastic difference is the additional space for images - instead of adding more images, Spotify shows more of the original image, creating a seamless viewing experience on any medium. </p>
-
-						<br>
-					</div>
-					<img src="images/mobile.png" alt="mobile" />
-					<img src="images/pad.png" alt="pad" />
-					<img src="images/desk.png" alt="desk" />
-					<br>
-					<div class="resources">
-						<p>
-							Research for this article comes from <a href="http://spotify.com">Spotify</a>
-						</p>
-					</div>
+			<div class="column">
+				<p>Let’s take a look at Spotify.com. Making use of a variety of album covers as images, Spotify showcases popular titles at any viewport width. Let’s begin with the design as viewed on mobile: each section of the page is accompanied by an image that accentuates the text, and is distinguished by different background colors or images. Very little padding can be seen on the sides due to the restricted screen size.
+				</p>
 
 
-				</article>
+				<p>As the screen is expanded to a typical vertical iPad viewing width, we can still see the hamburger menu icon for navigation, but there becomes a more defined grid in the body sections and increased padding. Spotify can also take a few more creative liberties with how images are displayed: instead of being confined to the same column, the images of each section are instead placed to the side of the text and resized to take up more screen space. Additionally, Spotify shows some animations and fade effects when displaying each section.</p>
 
-			<hr id="prefooter">
-			<footer>
-				<p>Jonathan Lu</p>
-				<p><a href="https://validator.w3.org/check?uri=referer">Valid HTML5</a></p>
-				<p><a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a></p>
-			</footer>
-		</div>
+				<p>Finally, as the screen is resized for desktop, we can see a full range of animations and images. The grid expands slightly, however the most drastic difference is the additional space for images - instead of adding more images, Spotify shows more of the original image, creating a seamless viewing experience on any medium. </p>
 
-	</body>
+				<br>
+			</div>
+			<img src="images/mobile.png" alt="mobile" />
+			<img src="images/pad.png" alt="pad" />
+			<img src="images/desk.png" alt="desk" />
+			<br>
+			<div class="resources">
+				<p>
+					Research for this article comes from <a href="http://spotify.com">Spotify</a>
+				</p>
+			</div>
+
+
+		</article>
+
+		<hr id="prefooter">
+		<footer>
+			<p>Jonathan Lu</p>
+			<p><a href="https://validator.w3.org/check?uri=referer">Valid HTML5</a></p>
+			<p><a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a></p>
+		</footer>
+	</div>
+
+</body>
 </html>

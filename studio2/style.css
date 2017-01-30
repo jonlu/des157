@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+/* start all css with a reset */
+
+* {
+    margin: 0px;
+    padding: 0px
+}
+
+.madlib-vis {
+  opacity: 1;
+  transition: 2s opacity;
+}
+
+.madlib-hid {
+  position: absolute;
+  opacity: 0;
+  transition: none;
+}
+
+#inputs {
+  width: 800px;
+  margin: auto;
+}
+
+form {
+
+  text-align: center;
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+form input {
+  font-size: 25px;
+  width: 32%;
+  border: none;
+  border-bottom: 2px solid black;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 30px 20px;
+
+}
+
+form input:focus {
+  outline:none;
+}
+
+#response {
+  color: white;
+  width: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(20%, 50%);
+  font-family: Helvetica;
+  font-size: 20px;
+  line-height: 2;
+}
+
+.black {
+  background-color: black;
+  opacity: 1;
+  transition: 2s;
+}
+
+.img-vis {
+  opacity: 1;
+  transition: 2s opacity;
+  height: 80vh;
+  position: absolute;
+  bottom: 100px;
+  right: 50px;
+  z-index: -100;
+}
+
+.img-hid {
+  display: none;
+  position: absolute;
+  opacity: 0;
+  transition: none;
+}
+
+input[type = "submit"] {
+  color:black;
+  background-color: white;
+}
+
+input[type = "submit"]:hover {
+  color:white;
+  cursor: pointer;
+  background-color: black;
+}
+
+header {
+  font-family: 'Barrio', cursive;
+  text-align: center;
+  top: 5vh;
+  font-size: 40px;
+  position: relative;
+}
+
+footer {
+  font-family: helvetica;
+  color:black;
+  text-decoration: none;
+  position: absolute;
+  text-align: center;
+  left: 43vw;
+  bottom: 20px;
+}
+
+footer a:visited {
+  color:black;
+}
