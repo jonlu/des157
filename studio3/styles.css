@@ -1,0 +1,179 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/************ END RESET *************/
+
+body {
+    -webkit-transition: 1.2s;
+    -moz-transition: 1.2s;
+    -ms-transition: 1.2s;
+    -o-transition: 1.2s;
+    transition: background-color 1.2s;
+    transition-timing-function: ease;
+}
+
+.lightblue {
+    background-color: #2DE1FC
+}
+
+.reddish {
+    background-color: #EC4251;
+}
+.green {
+	background-color: #16DB93;
+}
+.yellow {
+	background-color: #EFEA5A;
+}
+.orange {
+	background-color: #F29E4C;
+}
+.container {
+    width: 100%;
+    position: relative;
+}
+
+#macbook {
+    width: 1400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+[id^="screen"] {
+    -webkit-transition: 1.2s;
+    -moz-transition: 1.2s;
+    -ms-transition: 1.2s;
+    -o-transition: 1.2s;
+    transition: left width 1.2s;
+    transition-timing-function: ease;
+    -webkit-filter: drop-shadow( 0 0 20px #555);
+    filter: drop-shadow( 0 0 20px #555);
+    display: block;
+    width: 418px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -52.2%);
+    cursor: pointer;
+}
+
+path {
+    fill: #50E2ED;
+}
+
+.inactive {
+    -webkit-transition: 1.2s;
+    -moz-transition: 1.2s;
+    -ms-transition: 1.2s;
+    -o-transition: 1.2s;
+    transition: width 1.2s;
+    transition-timing-function: ease;
+    width: 21% !important;
+    -webkit-filter: drop-shadow( 0 0 7px #666);
+    filter: drop-shadow( 0 0 7px #666);
+    z-index: -100;
+}
+
+[class*="right"] {
+    -webkit-transition: 1.2s;
+    -moz-transition: 1.2s;
+    -ms-transition: 1.2s;
+    -o-transition: 1.2s;
+    transition: left opacity 1.2s;
+    transition-timing-function: ease;
+    opacity: 1;
+}
+
+.right1 {
+    display: block;
+    left: 81% !important;
+}
+
+.right2 {
+    opacity: 1;
+    left: 107% !important;
+}
+
+.right3 {
+    left: 200%;
+}
+
+.right4 {
+    left: 200%;
+}
+
+.right5 {
+    left: 200%;
+}
+
+[class*="left"] {
+    -webkit-transition: 1.2s;
+    -moz-transition: 1.2s;
+    -ms-transition: 1.2s;
+    -o-transition: 1.2s;
+    transition: left opacity 1.2s;
+    transition-timing-function: ease;
+    opacity: 1;
+}
+
+.left1 {
+    display: block;
+    left: 19% !important;
+}
+
+.left2 {
+    opacity: 1;
+    left: -7% !important;
+}
+
+.left3 {
+    left: -200%;
+}
+
+.left4 {
+    left: -200%;
+}
+
+.left5 {
+    left: -200%;
+}
