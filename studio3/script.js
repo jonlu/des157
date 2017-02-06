@@ -1,5 +1,5 @@
 var colorClass = ["lightblue", "green", "yellow","orange", "reddish"];
-var colors = ["#50E2ED", "#0CFF96", "#ECFF42", "#F29E4C", "#FF2156"];
+var colors = ["#50E2ED", "#0CFF96", "#ECFF42", "#F29E4C", "#FF6B77"];
 
 document.addEventListener("DOMContentLoaded", function(event) {
   console.log("DOM fully loaded and parsed");
@@ -8,6 +8,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   var screens;
   var paths = document.getElementsByTagName('path');
+  var desc = document.getElementsByTagName('p');
+  var imgs = document.getElementsByClassName('screenImg');
+
   addClick();
   for (var i = 0; i < paths.length; i++) {
     setFill(i);
@@ -27,6 +30,24 @@ document.addEventListener("DOMContentLoaded", function(event) {
         break;
       }
     }
+    for (var i = 0; i < imgs.length; i++) {
+      hover(i);
+    }
+  }
+
+  function hover(i) {
+    console.log(imgs[i]);
+    imgs[i].addEventListener('mouseover', function () {
+      desc[i].classList.add('reveal');
+    });
+    imgs[i].addEventListener('mouseout', function() {
+      desc[i].classList.remove('reveal');
+    });
+    if (screens[i].classList.length == 1) {
+      imgs[i].classList.remove('hideImg');
+    } else {
+      imgs[i].classList.add('hideImg');
+    }
   }
 
   function click(i) {
@@ -34,10 +55,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
       document.getElementById('bod').className="";
       document.getElementById('bod').classList.add(colorClass[i]);
+
       screens[i].setAttribute("class", "scrn");
       for (var j = 0; j < screens.length; j++) {
         shiftRight(i, j);
       }
+
       addClick();
     });
   }
