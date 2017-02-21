@@ -20,20 +20,14 @@ if (!mapId) {
   location.hash = mapId;
 }
 
-// var fbconfig = {
-//   apikey: config.firebase.apiKey,
-//   authDomain: config.firebase.auth + ".firebaseapp.com",
-//   databaseURL: "https://" + config.firebase.auth + ".firebaseio.com",
-//   storageBucket: config.firebase.auth + ".appspot.com",
-//   messagingSenderId: "769660466463"
-// }
 var fbconfig = {
-    apiKey: "AIzaSyCPiVPqysEtGpHxjIfk1hfdHwRj0d7QoXU",
-    authDomain: "maps-91c48.firebaseapp.com",
-    databaseURL: "https://maps-91c48.firebaseio.com",
-    storageBucket: "maps-91c48.appspot.com",
-    messagingSenderId: "769660466463"
-  };
+  apikey: config.firebase.apiKey,
+  authDomain: config.firebase.auth + ".firebaseapp.com",
+  databaseURL: "https://" + config.firebase.auth + ".firebaseio.com",
+  storageBucket: config.firebase.auth + ".appspot.com",
+  messagingSenderId: "769660466463"
+}
+
 firebase.initializeApp(fbconfig);
 var locationsRef = firebase.database().ref('maps/' + mapId);
 var locations = {};
@@ -60,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v9',
     center: [-121.7617, 38.5382],
-    maxZoom: 16,
+
     zoom: 13.3,
     attributionControl: false,
   });
@@ -113,9 +107,9 @@ document.addEventListener('DOMContentLoaded', function(event) {
     loc.className = 'marker';
     if (uuid === myUuid) {
       // loc.style.backgroundImage = 'url(https://placebear.com/' + markerSize[0] + '/' + markerSize[1] + ')';
-      loc.style.backgroundImage = 'url(http://fillmurray.com/' + markerSize[0] + '/' + markerSize[1] + ')';
+      loc.style.backgroundImage = 'url(imgs/redskull.svg)';
     } else {
-      loc.style.backgroundImage = 'url(https://placekitten.com/g/' + markerSize[0] + '/' + markerSize[1] + '/)';
+      loc.style.backgroundImage = 'url(imgs/blackskull.svg)';
     }
     loc.style.width = markerSize[0]+"px";
     loc.style.height = markerSize[1]+"px";

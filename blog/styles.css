@@ -116,6 +116,10 @@ nav li {
 
 }
 
+nav li:first-of-type {
+	padding-left: 0px;
+}
+
 #prefooter {
 	clear: both;
 }
