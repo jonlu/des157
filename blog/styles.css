@@ -168,3 +168,6 @@ a:hover {
 	width: 32.5%;
 	vertical-align: text-top;
 }
+h3 {
+	font-weight: bold;
+}

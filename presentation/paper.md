@@ -1,0 +1,8 @@
+###Clicks must be unambiguous
+When exploring a web page, users should be presented with a clear directional flow for the information that they are trying to find. As an older school of thought, designers sought to reduce the number of clicks that are necessary to reach any page within the site; however, Krug suggests that the user doesn't mind (to an extent) the number of clicks, but rather the simple logical path to said information. When adding links to direct the user, the links should clearly target the information it links to.
+
+###Don't give confusing forms
+Similarly, when adding forms to the page (specifically for user logins), the submit function should be clear in its direction. Additionally, forms are inherently unclear in directing information, so should be avoided as a call to action. As an alternative, the form can lie behind a button that tells the user what kind of form that they will be filling out, and what will come as a result of submitting the form.
+
+###Some assistance may be required
+When using forms, some fields can be confusing at times. When this happens, there may be a tool tip that helps the user along in their interaction with the form. For example, a "What's This?" button that pops up an information bubble is simple and helpful. The three properties that Krug expresses about these tooltips are: Brief, Timely, and Unavoidable. To summarize: they should use the smallest amount of information to convey the information; they should appear exactly when needed; and they should be obvious to the user. 
